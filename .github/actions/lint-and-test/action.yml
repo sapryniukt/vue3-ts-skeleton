@@ -19,13 +19,13 @@ runs:
         node-version: ${{ inputs.node-version }}
 
     - name: Install dependencies
-      shell: zsh
+      shell: bash
       run: npm install
 
     - name: Run ESLint
-      shell: zsh
+      shell: bash
       run: npm run lint
 
     - name: Run Tests
-      shell: zsh
+      shell: bash
       run: npm run test:coverage
