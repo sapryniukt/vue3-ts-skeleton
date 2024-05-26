@@ -1,4 +1,4 @@
-name: Lint
+name: Test
 
 on:
   push:
@@ -9,14 +9,12 @@ on:
       - develop
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Install dependencies
         uses: ./.github/workflows/install-dependencies.yml
-        with:
-          node-version: '18'
 
-      - name: Run ESLint
-        run: npm run lint
+      - name: Run Tests
+        run: npm run test:coverage
