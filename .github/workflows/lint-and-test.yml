@@ -1,4 +1,4 @@
-name: Lint
+name: Lint and Test
 
 on:
   push:
@@ -9,14 +9,14 @@ on:
       - develop
 
 jobs:
-  lint:
+  lint_and_test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install dependencies
-        uses: ./.github/workflows/install-dependencies.yml
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Lint and Test
+        uses: ./.github/actions/lint-and-test
         with:
           node-version: '18'
-
-      - name: Run ESLint
-        run: npm run lint
