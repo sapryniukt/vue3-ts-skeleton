@@ -12,6 +12,7 @@
 		"lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
 		"format": "prettier --write src/",
 		"test": "vitest --run",
+		"test:watch": "vitest",
 		"test:coverage": "vitest run --coverage",
 		"prepare": "husky"
 	},
