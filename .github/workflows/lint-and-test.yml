@@ -19,4 +19,4 @@ jobs:
       - name: Lint and Test
         uses: ./.github/actions/lint-and-test
         with:
-          node-version: '18'
+          node-version: '22'
