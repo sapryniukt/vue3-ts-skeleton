@@ -38,7 +38,7 @@
 		"sonarqube-scanner": "^3.5.0",
 		"typescript": "~5.8.3",
 		"vite": "^5.4.19",
-		"vite-plugin-pwa": "^0.20.0",
+		"vite-plugin-pwa": "^0.21.2",
 		"vite-plugin-vue-devtools": "^7.0.25",
 		"vitest": "^1.6.0",
 		"vue-tsc": "^2.2.10"
