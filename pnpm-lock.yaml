@@ -22,7 +22,7 @@ importers:
         specifier: ^20.17.47
         version: 20.17.47
       '@vitejs/plugin-vue':
-        specifier: ^5.0.4
+        specifier: ^5.2.4
         version: 5.2.4(vite@5.4.19(@types/node@20.17.47)(terser@5.39.1))(vue@3.5.13(typescript@5.8.3))
       '@vitest/coverage-v8':
         specifier: ^1.6.0
