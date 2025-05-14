@@ -13,7 +13,7 @@ importers:
         version: 3.5.13(typescript@5.8.3)
     devDependencies:
       '@rushstack/eslint-patch':
-        specifier: ^1.8.0
+        specifier: ^1.11.0
         version: 1.11.0
       '@tsconfig/node20':
         specifier: ^20.1.5
