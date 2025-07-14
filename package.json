@@ -17,7 +17,7 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"vue": "^3.5.16"
+		"vue": "^3.5.17"
 	},
 	"devDependencies": {
 		"@rushstack/eslint-patch": "^1.11.0",
@@ -41,7 +41,7 @@
 		"vite-plugin-pwa": "^1.0.1",
 		"vite-plugin-vue-devtools": "^7.7.7",
 		"vitest": "^3.1.4",
-		"vue-tsc": "^2.2.12"
+		"vue-tsc": "^3.0.1"
 	},
 	"engines": {
 		"node": ">=22.16.0"
