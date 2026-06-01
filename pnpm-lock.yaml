@@ -23,7 +23,7 @@ importers:
         version: 22.17.0
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
-        version: 6.0.0(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
+        version: 6.0.0(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
       '@vitest/coverage-v8':
         specifier: ^3.2.4
         version: 3.2.4(vitest@3.2.4(@types/node@22.17.0)(jsdom@26.1.0)(terser@5.46.1))
@@ -64,14 +64,14 @@ importers:
         specifier: ~5.8.3
         version: 5.8.3
       vite:
-        specifier: ^7.0.4
-        version: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+        specifier: ^7.3.5
+        version: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
       vite-plugin-pwa:
         specifier: ^1.0.1
-        version: 1.0.1(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(workbox-build@7.3.0)(workbox-window@7.3.0)
+        version: 1.0.1(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(workbox-build@7.3.0)(workbox-window@7.3.0)
       vite-plugin-vue-devtools:
         specifier: ^7.7.7
-        version: 7.7.7(rollup@2.80.0)(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
+        version: 7.7.7(rollup@2.80.0)(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
       vitest:
         specifier: ^3.2.4
         version: 3.2.4(@types/node@22.17.0)(jsdom@26.1.0)(terser@5.46.1)
@@ -1297,6 +1297,7 @@ packages:
 
   '@ungap/structured-clone@1.3.0':
     resolution: {integrity: sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   '@vitejs/plugin-vue@6.0.0':
     resolution: {integrity: sha512-iAliE72WsdhjzTOp2DtvKThq1VBC4REhwRcaA+zPAAph6I+OQhUXv+Xu2KS7ElxYtb7Zc/3R30Hwv1DxEo7NXQ==}
@@ -3381,6 +3382,46 @@ packages:
       yaml:
         optional: true
 
+  vite@7.3.5:
+    resolution: {integrity: sha512-KuOaNhcnGFN2zIPGA7wRmzF+lJA1sea7rHq17aiJ++9lzY1WWG6Jpwqwe1KNbRVPIqHmr8GLYx7jbrQcN/7/ww==}
+    engines: {node: ^20.19.0 || >=22.12.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': ^20.19.0 || >=22.12.0
+      jiti: '>=1.21.0'
+      less: ^4.0.0
+      lightningcss: ^1.21.0
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
+      terser: ^5.16.0
+      tsx: ^4.8.1
+      yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      yaml:
+        optional: true
+
   vitest@3.2.4:
     resolution: {integrity: sha512-LUCP5ev3GURDysTWiP47wRRUpLKMOfPh+yKTx3kVIEiu5KOMeqzpnYNsKyOoVrULivR8tLcks4+lga33Whn90A==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
@@ -4902,10 +4943,10 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-vue@6.0.0(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))':
+  '@vitejs/plugin-vue@6.0.0(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.19
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
       vue: 3.5.17(typescript@5.8.3)
 
   '@vitest/coverage-v8@3.2.4(vitest@3.2.4(@types/node@22.17.0)(jsdom@26.1.0)(terser@5.46.1))':
@@ -5075,14 +5116,14 @@ snapshots:
       de-indent: 1.0.2
       he: 1.2.0
 
-  '@vue/devtools-core@7.7.7(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))':
+  '@vue/devtools-core@7.7.7(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
       '@vue/devtools-kit': 7.7.7
       '@vue/devtools-shared': 7.7.7
       mitt: 3.0.1
       nanoid: 5.1.5
       pathe: 2.0.3
-      vite-hot-client: 2.0.4(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))
+      vite-hot-client: 2.0.4(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))
       vue: 3.5.17(typescript@5.8.3)
     transitivePeerDependencies:
       - vite
@@ -7115,9 +7156,9 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite-hot-client@2.0.4(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1)):
+  vite-hot-client@2.0.4(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1)):
     dependencies:
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
 
   vite-node@3.2.4(@types/node@22.17.0)(terser@5.46.1):
     dependencies:
@@ -7140,7 +7181,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite-plugin-inspect@0.8.9(rollup@2.80.0)(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1)):
+  vite-plugin-inspect@0.8.9(rollup@2.80.0)(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1)):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.4(rollup@2.80.0)
@@ -7151,39 +7192,39 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.1.1
       sirv: 3.0.1
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-pwa@1.0.1(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(workbox-build@7.3.0)(workbox-window@7.3.0):
+  vite-plugin-pwa@1.0.1(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(workbox-build@7.3.0)(workbox-window@7.3.0):
     dependencies:
       debug: 4.4.1
       pretty-bytes: 6.1.1
       tinyglobby: 0.2.14
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
       workbox-build: 7.3.0
       workbox-window: 7.3.0
     transitivePeerDependencies:
       - supports-color
 
-  vite-plugin-vue-devtools@7.7.7(rollup@2.80.0)(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3)):
+  vite-plugin-vue-devtools@7.7.7(rollup@2.80.0)(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3)):
     dependencies:
-      '@vue/devtools-core': 7.7.7(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
+      '@vue/devtools-core': 7.7.7(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))(vue@3.5.17(typescript@5.8.3))
       '@vue/devtools-kit': 7.7.7
       '@vue/devtools-shared': 7.7.7
       execa: 9.5.3
       sirv: 3.0.1
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
-      vite-plugin-inspect: 0.8.9(rollup@2.80.0)(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))
-      vite-plugin-vue-inspector: 5.3.1(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1))
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
+      vite-plugin-inspect: 0.8.9(rollup@2.80.0)(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))
+      vite-plugin-vue-inspector: 5.3.1(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1))
     transitivePeerDependencies:
       - '@nuxt/kit'
       - rollup
       - supports-color
       - vue
 
-  vite-plugin-vue-inspector@5.3.1(vite@7.3.2(@types/node@22.17.0)(terser@5.46.1)):
+  vite-plugin-vue-inspector@5.3.1(vite@7.3.5(@types/node@22.17.0)(terser@5.46.1)):
     dependencies:
       '@babel/core': 7.27.1
       '@babel/plugin-proposal-decorators': 7.27.1(@babel/core@7.27.1)
@@ -7194,11 +7235,24 @@ snapshots:
       '@vue/compiler-dom': 3.5.16
       kolorist: 1.8.0
       magic-string: 0.30.17
-      vite: 7.3.2(@types/node@22.17.0)(terser@5.46.1)
+      vite: 7.3.5(@types/node@22.17.0)(terser@5.46.1)
     transitivePeerDependencies:
       - supports-color
 
   vite@7.3.2(@types/node@22.17.0)(terser@5.46.1):
+    dependencies:
+      esbuild: 0.27.7
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
+      postcss: 8.5.9
+      rollup: 4.60.1
+      tinyglobby: 0.2.16
+    optionalDependencies:
+      '@types/node': 22.17.0
+      fsevents: 2.3.3
+      terser: 5.46.1
+
+  vite@7.3.5(@types/node@22.17.0)(terser@5.46.1):
     dependencies:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
