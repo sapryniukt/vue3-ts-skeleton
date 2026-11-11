@@ -35,7 +35,7 @@
 		"jsdom": "^26.1.0",
 		"npm-run-all2": "^8.0.4",
 		"prettier": "^3.8.4",
-		"sonarqube-scanner": "^4.3.0",
+		"sonarqube-scanner": "^4.4.0",
 		"typescript": "~5.8.3",
 		"vite": "^7.0.4",
 		"vite-plugin-pwa": "^1.0.1",
